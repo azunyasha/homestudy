@@ -4,3 +4,9 @@ https://yakuza.fandom.com/wiki/Category:Karaoke
 ссылка на наречия:
 
 https://quizlet.com/jp/225253155/jlpt-n2-vocabulary-adverbs-flash-cards/
+
+document.querySelector("#content")
+
+document.querySelector("#mw-content-text")
+document.querySelector("#mw-content-text > div.category-page__members")
+<li class="category-page__member">
