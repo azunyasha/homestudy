@@ -1,4 +1,4 @@
 {
-"cat" : "https://www.google.ru/search?q=%D0%BA%D0%BE%D1%82&newwindow=1&sxsrf=AJOqlzUnnze0T27jmt9tzCZrKuZX8XwfQQ:1676625956497&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiGm7u0npz9AhUO_ioKHWveDkMQ_AUoAXoECAEQAw&biw=1920&bih=937&dpr=1",
-"bread" : "https://www.google.ru/search?q=%D1%85%D0%BB%D0%B5%D0%B1&tbm=isch&ved=2ahUKEwiRhry1npz9AhUYB3cKHekvA7kQ2-cCegQIABAA&oq=%D1%85%D0%BB%D0%B5%D0%B1&gs_lcp=CgNpbWcQAzIECCMQJzIECAAQQzIECAAQQzIECAAQQzIICAAQgAQQsQMyBAgAEEMyBAgAEEMyBQgAEIAEMgUIABCABDIFCAAQgAQ6BwgAELEDEEM6CwgAEIAEELEDEIMBOggIABCxAxCDAVCxEliZGmCEI2gAcAB4AIABSogBpQKSAQE1mAEAoAEBqgELZ3dzLXdpei1pbWe4AQPAAQE&sclient=img&ei=JkjvY5HbJJiO3APp34zICw&bih=937&biw=1920"
+"bread" : "https://www.bigstockphoto.com/ru/search/%D1%85%D0%BB%D0%B5%D0%B1/",
+"cat" : "https://www.bigstockphoto.com/ru/search/%D0%BA%D0%BE%D1%82/"
 }
