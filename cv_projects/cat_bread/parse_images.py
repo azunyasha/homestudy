@@ -9,6 +9,21 @@ import json
 import time
 import os
 
+#return array with all image src from search result
+def stock_img_src(driver, link, num_max):
+    img_src = []
+    for i in range(2250, num_max, 150):
+        print(link + "?start=" + str(i))
+        img_src += page_img_src(driver, link + "?start=" + str(i))
+    return img_src
+
+#return array with all image src on the page
+def page_img_src(driver, link):
+    driver.get(link)
+    img_elements = driver.find_elements(By.CSS_SELECTOR, ("img"))
+    img_src = [elem.get_attribute('src') for elem in img_elements]
+    return img_src
+
 # reading the data from the file
 project_path = './cv_projects/cat_bread/'
 with open(project_path+'links_list.txt') as f:
@@ -25,25 +40,11 @@ for key in links.keys():
     for file_name in os.listdir(project_path + key):
     # construct full file path
         file = project_path + key + "/" + file_name
-        #print(file)
-        #print(os.path.isfile(file))
         if os.path.isfile(file):
-            print('Deleting file:', file)
+            #print('Deleting file:', file)
             os.remove(file)
     link = links[key]
-    driver.get(link)
-    bottom_flag = 0
-    height = driver.execute_script("return document.body.scrollHeight")
-    while 1-bottom_flag:
-        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-        time.sleep(3)
-        new_height = driver.execute_script("return document.body.scrollHeight")
-        if new_height == height:
-            bottom_flag = 1
-        else:
-            height = new_height
-    img_elements = driver.find_elements(By.CLASS_NAME, "rg_i.Q4LuWd")
-    img_src = [elem.get_attribute('src') for elem in img_elements]
+    img_src = stock_img_src(driver, link, 6000)
     filenum = 0
     for img in img_src:
         if img is not None:
