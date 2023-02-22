@@ -1,0 +1,5 @@
+torch==1.9.0
+Pillow==9.4.0
+telebot
+numpy
+
